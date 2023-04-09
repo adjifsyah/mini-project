@@ -9,8 +9,16 @@ import UIKit
 
 class HomeInteractor: HomeInteractorProtocol {
     var presenter: HomePresenterProtocol?
+    var services = URLSessionClient(urlSession: .shared)
     
     func fetchListUser(nav: UINavigationController) {
-        print(nav)
+        services.fetchListUser(path: "/api/users") { result in
+            switch result {
+            case .success(let success):
+                self.presenter?.successGetUser(data: success)
+            case .failure(_):
+                self.presenter?.failureGetuser()
+            }
+        }
     }
 }

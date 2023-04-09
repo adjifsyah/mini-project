@@ -40,6 +40,7 @@ class LoginPageVC: UIViewController {
         passwordTF.borderStyle = .roundedRect
         passwordTF.delegate = self
         passwordTF.tag = 2
+        passwordTF.isSecureTextEntry = true
         return passwordTF
     }()
     

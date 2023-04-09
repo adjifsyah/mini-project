@@ -28,6 +28,7 @@ class LoginRouter: LoginRouterProtocol {
     func goToHome(nav: UINavigationController) {
         DispatchQueue.main.async {
             let homeVC = HomeRouter.createModule()
+            homeVC.title = "Home"
             nav.pushViewController(homeVC, animated: true)
         }
         

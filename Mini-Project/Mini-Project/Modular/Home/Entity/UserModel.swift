@@ -12,5 +12,6 @@ struct UserModel: Decodable {
     let email: String
     let firstName: String
     let lastName: String
+    let fullName: String
     let imageUrl: String
 }

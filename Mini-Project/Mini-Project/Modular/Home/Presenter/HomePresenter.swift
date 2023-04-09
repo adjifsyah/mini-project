@@ -17,7 +17,7 @@ class HomePresenter: HomePresenterProtocol {
     }
     
     func successGetUser(data: [UserModel]) {
-//        view
+        view?.showListUser(data: data)
     }
     
     func failureGetuser() {

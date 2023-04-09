@@ -9,7 +9,7 @@ import Foundation
 
 class URLSessionClient {
     typealias ResultLogin = Result<ResponseLogin, GeneralNetworkError>
-    typealias ResultHome = Result<ResponseListUser, GeneralNetworkError>
+    typealias ResultHome = Result<[UserModel], GeneralNetworkError>
     private let urlSession: URLSession
     
     init(urlSession: URLSession) {
@@ -44,7 +44,7 @@ class URLSessionClient {
     }
     
     func fetchListUser(path: String, completion: @escaping (ResultHome) -> Void) {
-        guard let url = createURL(input: path).url else { return }
+        guard let url = createURL(input: path, page: "2").url else { return }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         
@@ -54,7 +54,11 @@ class URLSessionClient {
                 case 200:
                     DispatchQueue.main.async {
                         guard let decode = try? JSONDecoder().decode(ResponseListUser.self, from: data) else { return completion(.failure(.unexpectedData))}
-                        completion(.success(decode))
+                        var userModel: [UserModel] = []
+                        for user in decode.listUser {
+                            userModel.append(UserModel(userId: user.userId, email: user.email, firstName: user.firstName, lastName: user.lastName, fullName: "\(user.firstName) \(user.lastName)", imageUrl: user.imageUrl))
+                        }
+                        completion(.success(userModel))
                                 
                     }
                 default:
@@ -63,15 +67,18 @@ class URLSessionClient {
             } else {
                 completion(.failure(.networkError))
             }
-        }
+        }.resume()
         
     }
     
-    func createURL(input path: String) -> URLComponents {
+    private func createURL(input path: String, page: String = "") -> URLComponents {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
         urlComponents.host = "reqres.in"
         urlComponents.path = path
+        if page != "" {
+            urlComponents.queryItems = [URLQueryItem(name: "page", value: page)]
+        }
         return urlComponents
     }
 }

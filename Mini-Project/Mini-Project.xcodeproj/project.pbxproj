@@ -36,7 +36,8 @@
 		CF67EDF529E26A2F00C5EDA0 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDF429E26A2F00C5EDA0 /* HomeRouter.swift */; };
 		CF67EDF729E26AB100C5EDA0 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDF629E26AB100C5EDA0 /* HomePresenter.swift */; };
 		CF67EDF929E26AF900C5EDA0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDF829E26AF900C5EDA0 /* HomeInteractor.swift */; };
-		CF67EDFD29E26C0D00C5EDA0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDFC29E26C0D00C5EDA0 /* TableViewCell.swift */; };
+		CF67EDFF29E26D5D00C5EDA0 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDFE29E26D5D00C5EDA0 /* UserCell.swift */; };
+		CF67EE0329E27EB900C5EDA0 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EE0229E27EB900C5EDA0 /* UIImageView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +72,8 @@
 		CF67EDF429E26A2F00C5EDA0 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		CF67EDF629E26AB100C5EDA0 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		CF67EDF829E26AF900C5EDA0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		CF67EDFC29E26C0D00C5EDA0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CF67EDFE29E26D5D00C5EDA0 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CF67EE0229E27EB900C5EDA0 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +106,10 @@
 		CF67ED9C29E23FB900C5EDA0 /* Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
+				CF67EE0429E281B100C5EDA0 /* App */,
 				CF67EDC429E2536500C5EDA0 /* DataManager */,
 				CF67EDB129E23FD000C5EDA0 /* Modular */,
-				CF67ED9D29E23FB900C5EDA0 /* AppDelegate.swift */,
-				CF67ED9F29E23FB900C5EDA0 /* SceneDelegate.swift */,
-				CF67EDA129E23FB900C5EDA0 /* ViewController.swift */,
-				CF67EDA329E23FB900C5EDA0 /* Main.storyboard */,
-				CF67EDA629E23FBB00C5EDA0 /* Assets.xcassets */,
-				CF67EDA829E23FBB00C5EDA0 /* LaunchScreen.storyboard */,
-				CF67EDAB29E23FBB00C5EDA0 /* Info.plist */,
+				CF67EE0029E27EA300C5EDA0 /* SupportingFiles */,
 			);
 			path = "Mini-Project";
 			sourceTree = "<group>";
@@ -278,9 +275,39 @@
 		CF67EDFB29E26C0000C5EDA0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CF67EDFC29E26C0D00C5EDA0 /* TableViewCell.swift */,
+				CF67EDFE29E26D5D00C5EDA0 /* UserCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF67EE0029E27EA300C5EDA0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EE0129E27EAC00C5EDA0 /* Extension */,
+				CF67EDA129E23FB900C5EDA0 /* ViewController.swift */,
+				CF67EDA329E23FB900C5EDA0 /* Main.storyboard */,
+				CF67EDA629E23FBB00C5EDA0 /* Assets.xcassets */,
+				CF67EDA829E23FBB00C5EDA0 /* LaunchScreen.storyboard */,
+				CF67EDAB29E23FBB00C5EDA0 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CF67EE0129E27EAC00C5EDA0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EE0229E27EB900C5EDA0 /* UIImageView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CF67EE0429E281B100C5EDA0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CF67ED9D29E23FB900C5EDA0 /* AppDelegate.swift */,
+				CF67ED9F29E23FB900C5EDA0 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +386,7 @@
 				CF67EDA229E23FB900C5EDA0 /* ViewController.swift in Sources */,
 				CF67EDE129E2668100C5EDA0 /* ResponseListUser.swift in Sources */,
 				CF67EDEA29E268A500C5EDA0 /* HomeInteractorProtocol.swift in Sources */,
+				CF67EDFF29E26D5D00C5EDA0 /* UserCell.swift in Sources */,
 				CF67ED9E29E23FB900C5EDA0 /* AppDelegate.swift in Sources */,
 				CF67EDDD29E2603800C5EDA0 /* LoginInteractor.swift in Sources */,
 				CF67EDF929E26AF900C5EDA0 /* HomeInteractor.swift in Sources */,
@@ -366,7 +394,6 @@
 				CF67EDF029E268E800C5EDA0 /* UserModel.swift in Sources */,
 				CF67EDA029E23FB900C5EDA0 /* SceneDelegate.swift in Sources */,
 				CF67EDDB29E25F9900C5EDA0 /* HomePageVC.swift in Sources */,
-				CF67EDFD29E26C0D00C5EDA0 /* TableViewCell.swift in Sources */,
 				CF67EDE829E2689F00C5EDA0 /* HomePresenterProtocol.swift in Sources */,
 				CF67EDB829E2400600C5EDA0 /* LoginPageVC.swift in Sources */,
 				CF67EDF729E26AB100C5EDA0 /* HomePresenter.swift in Sources */,
@@ -374,6 +401,7 @@
 				CF67EDCB29E25E0C00C5EDA0 /* LoginViewProtocol.swift in Sources */,
 				CF67EDC129E251FA00C5EDA0 /* ResponseLogin.swift in Sources */,
 				CF67EDBF29E251E000C5EDA0 /* UserLoginModel.swift in Sources */,
+				CF67EE0329E27EB900C5EDA0 /* UIImageView+Ext.swift in Sources */,
 				CF67EDE329E266D500C5EDA0 /* RemoteUserModel.swift in Sources */,
 				CF67EDC629E2538C00C5EDA0 /* GeneralNetworkError.swift in Sources */,
 				CF67EDEC29E268AB00C5EDA0 /* HomeRouterProtocol.swift in Sources */,
@@ -529,7 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2SLCA5Q65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Mini-Project/Info.plist";
+				INFOPLIST_FILE = "Mini-Project/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -557,7 +585,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F2SLCA5Q65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Mini-Project/Info.plist";
+				INFOPLIST_FILE = "Mini-Project/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
