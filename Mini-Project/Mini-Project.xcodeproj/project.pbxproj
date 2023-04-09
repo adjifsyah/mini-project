@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF67ED9E29E23FB900C5EDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67ED9D29E23FB900C5EDA0 /* AppDelegate.swift */; };
+		CF67EDA029E23FB900C5EDA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67ED9F29E23FB900C5EDA0 /* SceneDelegate.swift */; };
+		CF67EDA229E23FB900C5EDA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDA129E23FB900C5EDA0 /* ViewController.swift */; };
+		CF67EDA529E23FB900C5EDA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF67EDA329E23FB900C5EDA0 /* Main.storyboard */; };
+		CF67EDA729E23FBB00C5EDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF67EDA629E23FBB00C5EDA0 /* Assets.xcassets */; };
+		CF67EDAA29E23FBB00C5EDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF67EDA829E23FBB00C5EDA0 /* LaunchScreen.storyboard */; };
+		CF67EDB829E2400600C5EDA0 /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDB629E2400600C5EDA0 /* LoginPageVC.swift */; };
+		CF67EDBC29E2442300C5EDA0 /* URLSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDBB29E2442300C5EDA0 /* URLSessionClient.swift */; };
+		CF67EDBF29E251E000C5EDA0 /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDBE29E251E000C5EDA0 /* UserLoginModel.swift */; };
+		CF67EDC129E251FA00C5EDA0 /* ResponseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDC029E251FA00C5EDA0 /* ResponseLogin.swift */; };
+		CF67EDC629E2538C00C5EDA0 /* GeneralNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDC529E2538C00C5EDA0 /* GeneralNetworkError.swift */; };
+		CF67EDCB29E25E0C00C5EDA0 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDCA29E25E0C00C5EDA0 /* LoginViewProtocol.swift */; };
+		CF67EDCD29E25E4600C5EDA0 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDCC29E25E4600C5EDA0 /* LoginPresenterProtocol.swift */; };
+		CF67EDCF29E25EA000C5EDA0 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDCE29E25EA000C5EDA0 /* LoginInteractorProtocol.swift */; };
+		CF67EDD229E25ED100C5EDA0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDD129E25ED100C5EDA0 /* LoginPresenter.swift */; };
+		CF67EDD529E25F1B00C5EDA0 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDD429E25F1B00C5EDA0 /* LoginRouter.swift */; };
+		CF67EDD729E25F3400C5EDA0 /* LoginRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDD629E25F3400C5EDA0 /* LoginRouterProtocol.swift */; };
+		CF67EDDB29E25F9900C5EDA0 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDDA29E25F9900C5EDA0 /* HomePageVC.swift */; };
+		CF67EDDD29E2603800C5EDA0 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDDC29E2603800C5EDA0 /* LoginInteractor.swift */; };
+		CF67EDE129E2668100C5EDA0 /* ResponseListUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDE029E2668100C5EDA0 /* ResponseListUser.swift */; };
+		CF67EDE329E266D500C5EDA0 /* RemoteUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDE229E266D500C5EDA0 /* RemoteUserModel.swift */; };
+		CF67EDE629E2689700C5EDA0 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDE529E2689700C5EDA0 /* HomeViewProtocol.swift */; };
+		CF67EDE829E2689F00C5EDA0 /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDE729E2689F00C5EDA0 /* HomePresenterProtocol.swift */; };
+		CF67EDEA29E268A500C5EDA0 /* HomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDE929E268A500C5EDA0 /* HomeInteractorProtocol.swift */; };
+		CF67EDEC29E268AB00C5EDA0 /* HomeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDEB29E268AB00C5EDA0 /* HomeRouterProtocol.swift */; };
+		CF67EDF029E268E800C5EDA0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDEF29E268E800C5EDA0 /* UserModel.swift */; };
+		CF67EDF529E26A2F00C5EDA0 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDF429E26A2F00C5EDA0 /* HomeRouter.swift */; };
+		CF67EDF729E26AB100C5EDA0 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDF629E26AB100C5EDA0 /* HomePresenter.swift */; };
+		CF67EDF929E26AF900C5EDA0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDF829E26AF900C5EDA0 /* HomeInteractor.swift */; };
+		CF67EDFD29E26C0D00C5EDA0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67EDFC29E26C0D00C5EDA0 /* TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF67ED9A29E23FB900C5EDA0 /* Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF67ED9D29E23FB900C5EDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF67ED9F29E23FB900C5EDA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF67EDA129E23FB900C5EDA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF67EDA429E23FB900C5EDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF67EDA629E23FBB00C5EDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF67EDA929E23FBB00C5EDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF67EDAB29E23FBB00C5EDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF67EDB629E2400600C5EDA0 /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
+		CF67EDBB29E2442300C5EDA0 /* URLSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionClient.swift; sourceTree = "<group>"; };
+		CF67EDBE29E251E000C5EDA0 /* UserLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
+		CF67EDC029E251FA00C5EDA0 /* ResponseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLogin.swift; sourceTree = "<group>"; };
+		CF67EDC529E2538C00C5EDA0 /* GeneralNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNetworkError.swift; sourceTree = "<group>"; };
+		CF67EDCA29E25E0C00C5EDA0 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		CF67EDCC29E25E4600C5EDA0 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
+		CF67EDCE29E25EA000C5EDA0 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
+		CF67EDD129E25ED100C5EDA0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CF67EDD429E25F1B00C5EDA0 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		CF67EDD629E25F3400C5EDA0 /* LoginRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterProtocol.swift; sourceTree = "<group>"; };
+		CF67EDDA29E25F9900C5EDA0 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		CF67EDDC29E2603800C5EDA0 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		CF67EDE029E2668100C5EDA0 /* ResponseListUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseListUser.swift; sourceTree = "<group>"; };
+		CF67EDE229E266D500C5EDA0 /* RemoteUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserModel.swift; sourceTree = "<group>"; };
+		CF67EDE529E2689700C5EDA0 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		CF67EDE729E2689F00C5EDA0 /* HomePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterProtocol.swift; sourceTree = "<group>"; };
+		CF67EDE929E268A500C5EDA0 /* HomeInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorProtocol.swift; sourceTree = "<group>"; };
+		CF67EDEB29E268AB00C5EDA0 /* HomeRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterProtocol.swift; sourceTree = "<group>"; };
+		CF67EDEF29E268E800C5EDA0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CF67EDF429E26A2F00C5EDA0 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		CF67EDF629E26AB100C5EDA0 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CF67EDF829E26AF900C5EDA0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		CF67EDFC29E26C0D00C5EDA0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF67ED9729E23FB900C5EDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF67ED9129E23FB900C5EDA0 = {
+			isa = PBXGroup;
+			children = (
+				CF67ED9C29E23FB900C5EDA0 /* Mini-Project */,
+				CF67ED9B29E23FB900C5EDA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF67ED9B29E23FB900C5EDA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF67ED9A29E23FB900C5EDA0 /* Mini-Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF67ED9C29E23FB900C5EDA0 /* Mini-Project */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDC429E2536500C5EDA0 /* DataManager */,
+				CF67EDB129E23FD000C5EDA0 /* Modular */,
+				CF67ED9D29E23FB900C5EDA0 /* AppDelegate.swift */,
+				CF67ED9F29E23FB900C5EDA0 /* SceneDelegate.swift */,
+				CF67EDA129E23FB900C5EDA0 /* ViewController.swift */,
+				CF67EDA329E23FB900C5EDA0 /* Main.storyboard */,
+				CF67EDA629E23FBB00C5EDA0 /* Assets.xcassets */,
+				CF67EDA829E23FBB00C5EDA0 /* LaunchScreen.storyboard */,
+				CF67EDAB29E23FBB00C5EDA0 /* Info.plist */,
+			);
+			path = "Mini-Project";
+			sourceTree = "<group>";
+		};
+		CF67EDB129E23FD000C5EDA0 /* Modular */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDB329E23FDD00C5EDA0 /* Login */,
+				CF67EDB529E23FF000C5EDA0 /* Home */,
+			);
+			path = Modular;
+			sourceTree = "<group>";
+		};
+		CF67EDB229E23FD600C5EDA0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDBA29E2441100C5EDA0 /* URLSessionClient */,
+				CF67EDC529E2538C00C5EDA0 /* GeneralNetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CF67EDB329E23FDD00C5EDA0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDDE29E2603D00C5EDA0 /* Interactor */,
+				CF67EDD329E25F1400C5EDA0 /* Router */,
+				CF67EDD029E25EC800C5EDA0 /* Presenter */,
+				CF67EDC929E25DF600C5EDA0 /* Protocol */,
+				CF67EDBD29E2458D00C5EDA0 /* Entity */,
+				CF67EDB629E2400600C5EDA0 /* LoginPageVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF67EDB529E23FF000C5EDA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDFA29E26BF900C5EDA0 /* View */,
+				CF67EDF329E26A2500C5EDA0 /* Interactor */,
+				CF67EDF229E26A2300C5EDA0 /* Router */,
+				CF67EDF129E26A2000C5EDA0 /* Presenter */,
+				CF67EDE429E2688D00C5EDA0 /* Protocol */,
+				CF67EDDF29E2667A00C5EDA0 /* Entity */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CF67EDBA29E2441100C5EDA0 /* URLSessionClient */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDBB29E2442300C5EDA0 /* URLSessionClient.swift */,
+			);
+			path = URLSessionClient;
+			sourceTree = "<group>";
+		};
+		CF67EDBD29E2458D00C5EDA0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDBE29E251E000C5EDA0 /* UserLoginModel.swift */,
+				CF67EDC029E251FA00C5EDA0 /* ResponseLogin.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CF67EDC429E2536500C5EDA0 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDB229E23FD600C5EDA0 /* Network */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		CF67EDC929E25DF600C5EDA0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDCA29E25E0C00C5EDA0 /* LoginViewProtocol.swift */,
+				CF67EDCC29E25E4600C5EDA0 /* LoginPresenterProtocol.swift */,
+				CF67EDCE29E25EA000C5EDA0 /* LoginInteractorProtocol.swift */,
+				CF67EDD629E25F3400C5EDA0 /* LoginRouterProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CF67EDD029E25EC800C5EDA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDD129E25ED100C5EDA0 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF67EDD329E25F1400C5EDA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDD429E25F1B00C5EDA0 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CF67EDDE29E2603D00C5EDA0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDDC29E2603800C5EDA0 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CF67EDDF29E2667A00C5EDA0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDE029E2668100C5EDA0 /* ResponseListUser.swift */,
+				CF67EDE229E266D500C5EDA0 /* RemoteUserModel.swift */,
+				CF67EDEF29E268E800C5EDA0 /* UserModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CF67EDE429E2688D00C5EDA0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDE529E2689700C5EDA0 /* HomeViewProtocol.swift */,
+				CF67EDE729E2689F00C5EDA0 /* HomePresenterProtocol.swift */,
+				CF67EDE929E268A500C5EDA0 /* HomeInteractorProtocol.swift */,
+				CF67EDEB29E268AB00C5EDA0 /* HomeRouterProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CF67EDF129E26A2000C5EDA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDF629E26AB100C5EDA0 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF67EDF229E26A2300C5EDA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDF429E26A2F00C5EDA0 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CF67EDF329E26A2500C5EDA0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDF829E26AF900C5EDA0 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CF67EDFA29E26BF900C5EDA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDFB29E26C0000C5EDA0 /* Cell */,
+				CF67EDDA29E25F9900C5EDA0 /* HomePageVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF67EDFB29E26C0000C5EDA0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF67EDFC29E26C0D00C5EDA0 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF67ED9929E23FB900C5EDA0 /* Mini-Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF67EDAE29E23FBB00C5EDA0 /* Build configuration list for PBXNativeTarget "Mini-Project" */;
+			buildPhases = (
+				CF67ED9629E23FB900C5EDA0 /* Sources */,
+				CF67ED9729E23FB900C5EDA0 /* Frameworks */,
+				CF67ED9829E23FB900C5EDA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mini-Project";
+			productName = "Mini-Project";
+			productReference = CF67ED9A29E23FB900C5EDA0 /* Mini-Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF67ED9229E23FB900C5EDA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CF67ED9929E23FB900C5EDA0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CF67ED9529E23FB900C5EDA0 /* Build configuration list for PBXProject "Mini-Project" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF67ED9129E23FB900C5EDA0;
+			productRefGroup = CF67ED9B29E23FB900C5EDA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF67ED9929E23FB900C5EDA0 /* Mini-Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF67ED9829E23FB900C5EDA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF67EDAA29E23FBB00C5EDA0 /* LaunchScreen.storyboard in Resources */,
+				CF67EDA729E23FBB00C5EDA0 /* Assets.xcassets in Resources */,
+				CF67EDA529E23FB900C5EDA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF67ED9629E23FB900C5EDA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF67EDD229E25ED100C5EDA0 /* LoginPresenter.swift in Sources */,
+				CF67EDCD29E25E4600C5EDA0 /* LoginPresenterProtocol.swift in Sources */,
+				CF67EDA229E23FB900C5EDA0 /* ViewController.swift in Sources */,
+				CF67EDE129E2668100C5EDA0 /* ResponseListUser.swift in Sources */,
+				CF67EDEA29E268A500C5EDA0 /* HomeInteractorProtocol.swift in Sources */,
+				CF67ED9E29E23FB900C5EDA0 /* AppDelegate.swift in Sources */,
+				CF67EDDD29E2603800C5EDA0 /* LoginInteractor.swift in Sources */,
+				CF67EDF929E26AF900C5EDA0 /* HomeInteractor.swift in Sources */,
+				CF67EDE629E2689700C5EDA0 /* HomeViewProtocol.swift in Sources */,
+				CF67EDF029E268E800C5EDA0 /* UserModel.swift in Sources */,
+				CF67EDA029E23FB900C5EDA0 /* SceneDelegate.swift in Sources */,
+				CF67EDDB29E25F9900C5EDA0 /* HomePageVC.swift in Sources */,
+				CF67EDFD29E26C0D00C5EDA0 /* TableViewCell.swift in Sources */,
+				CF67EDE829E2689F00C5EDA0 /* HomePresenterProtocol.swift in Sources */,
+				CF67EDB829E2400600C5EDA0 /* LoginPageVC.swift in Sources */,
+				CF67EDF729E26AB100C5EDA0 /* HomePresenter.swift in Sources */,
+				CF67EDF529E26A2F00C5EDA0 /* HomeRouter.swift in Sources */,
+				CF67EDCB29E25E0C00C5EDA0 /* LoginViewProtocol.swift in Sources */,
+				CF67EDC129E251FA00C5EDA0 /* ResponseLogin.swift in Sources */,
+				CF67EDBF29E251E000C5EDA0 /* UserLoginModel.swift in Sources */,
+				CF67EDE329E266D500C5EDA0 /* RemoteUserModel.swift in Sources */,
+				CF67EDC629E2538C00C5EDA0 /* GeneralNetworkError.swift in Sources */,
+				CF67EDEC29E268AB00C5EDA0 /* HomeRouterProtocol.swift in Sources */,
+				CF67EDCF29E25EA000C5EDA0 /* LoginInteractorProtocol.swift in Sources */,
+				CF67EDD529E25F1B00C5EDA0 /* LoginRouter.swift in Sources */,
+				CF67EDD729E25F3400C5EDA0 /* LoginRouterProtocol.swift in Sources */,
+				CF67EDBC29E2442300C5EDA0 /* URLSessionClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF67EDA329E23FB900C5EDA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF67EDA429E23FB900C5EDA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF67EDA829E23FBB00C5EDA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF67EDA929E23FBB00C5EDA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF67EDAC29E23FBB00C5EDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF67EDAD29E23FBB00C5EDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF67EDAF29E23FBB00C5EDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2SLCA5Q65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mini-Project/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adji.Mini-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF67EDB029E23FBB00C5EDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2SLCA5Q65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mini-Project/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adji.Mini-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF67ED9529E23FB900C5EDA0 /* Build configuration list for PBXProject "Mini-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF67EDAC29E23FBB00C5EDA0 /* Debug */,
+				CF67EDAD29E23FBB00C5EDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF67EDAE29E23FBB00C5EDA0 /* Build configuration list for PBXNativeTarget "Mini-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF67EDAF29E23FBB00C5EDA0 /* Debug */,
+				CF67EDB029E23FBB00C5EDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF67ED9229E23FB900C5EDA0 /* Project object */;
+}
